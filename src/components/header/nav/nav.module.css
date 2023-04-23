@@ -1,0 +1,11 @@
+.nav {
+    display: flex;
+}
+
+.item a {
+    color: #333333;
+}
+
+.item a.active {
+    color: #0144ff;
+}
