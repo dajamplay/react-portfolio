@@ -1,23 +1,21 @@
 import React from 'react';
 import './app.css';
 import Header from "./components/header/Header";
-import Home from "./components/pages/home/Home";
-import {Route, Routes} from "react-router-dom";
+import Routing from "./routing/Routing";
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (
         <div className="wrapper">
-
-            <div className="app__header__wrapper">
+            <div className="_container">
                 <Header />
             </div>
-
-            <div className="app__content__wrapper">
-                <Routes>
-                    <Route path="/" element={<Home />}/>
-                </Routes>
+            <div className="_container">
+                <Routing />
             </div>
-
+            <div className="_container">
+                <Footer />
+            </div>
         </div>
     );
 }
